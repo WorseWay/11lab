@@ -1,0 +1,203 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 25px;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 113px;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    display: block;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    color: #000000;
+}
+
+header a {
+    color: #000000;
+}
+
+.logo {
+    margin-right: 50px;
+    color: orange;
+}
+
+.menu {
+    display: flex;
+}
+
+
+.menu li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.menu li a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+.REG {
+    font-size: 17px;
+    margin-left: auto;
+    letter-spacing: 0.1em;
+    color: orange
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.delivery-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.delivery-info div {
+    width: 30%;
+    padding: 80px;
+    background:radial-gradient(circle at 25% top, rgb(146, 146, 243),white, pink);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.delivery-info div:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+body{
+margin:0;
+overflow-x:hidden;
+}
+
+.footer {
+background: #191919;
+padding: 30px 80px;
+color: white;
+font-family: 'Play', sans-serif;
+text-align: left;
+padding: 10px 80px;
+}
+
+.footer_content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.logo img {
+width: 50px;
+margin-bottom: 30px;
+}
+
+.help,
+.sub,
+.new {
+flex-basis: 30%;
+text-align: left;
+flex-direction: row;
+}
+
+.help a,
+.sub a {
+display: inline-block;
+margin-right: 20px;
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+font-size: 0.8em
+
+}
+.help a{
+opacity: 0.5;
+}
+.help a:hover,
+.sub a:hover {
+color: orange;
+opacity: 1;
+}
+
+.sub i {
+font-size: 1.5em;
+margin-right: 20px;
+}
+
+.new {
+flex-basis: 30%;
+text-align: left;
+display: flex;
+flex-direction: column;
+}
+
+.new h6 {
+margin-bottom: 10px;
+color: white;
+}
+
+.new input {
+padding: 10px;
+margin-bottom: 10px;
+}
+
+.new button {
+padding: 10px 20px;
+background-color: #191919;
+color: white;
+border: 2px solid white;
+cursor: pointer;
+transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.new button:hover {
+background-color: #eeb64f;
+border: 2px solid #eeb64f;
+
+}

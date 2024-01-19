@@ -1,0 +1,126 @@
+body {
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-size: 25px;
+}
+h1 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+}
+
+section {
+	padding-top: 113px	
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 20px;
+	margin: 0;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto; 
+}
+
+.header {
+	background: url('https://sun9-24.userapi.com/impg/WCDWRRxfKubjY_4HxAF1MIuErYYbr7fmqQfDdA/ed3Sp-PI1No.jpg?size=1920x1080&quality=96&sign=136676bf850db05ae658f2e46274873f&type=album') no-repeat center top / cover;
+	padding-top: 57px;
+	color: #fff;
+	padding-bottom: 322px
+}
+
+header a {
+	color: #fff;
+}
+
+
+.logo {	
+	margin-right: 50px;
+	color: orange;
+	
+	
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li a {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+
+.menu li a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.menu li {
+	margin-right: 40px;
+}
+
+.REG {
+	font-size: 17px;
+	margin-left: auto;
+	letter-spacing: 0.1em;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.offer {
+	text-transform: uppercase;
+	margin-top: 216px;
+}
+
+.offer p {
+	font-size: 61px;
+	letter-spacing: 0.1em;
+}
+
+.offer h1 {
+	font-size: 16px;
+	margin-bottom: 19px;
+	margin-top: 10px;
+	letter-spacing: 0.02em;
+	color: white;
+	text-shadow: 2px 2px 4px black
+}
+
+.btn {
+	display: block;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 17px 47px;
+	border: 1px solid #fff;
+	width: 238px;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #FDEED9;
+    color: #000;
+}
+
+.cvet {
+	color: orange;
+}
+
+#clock{
+    color: orange;
+ font-weight: bold;
+  font-size: 20px;
+}

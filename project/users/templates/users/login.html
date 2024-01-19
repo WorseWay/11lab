@@ -1,0 +1,40 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+   <div class="col-lg-5">
+       {% if messages or form.non_field_errors %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert"
+             style="margin-top: 50px;">
+            {%  if messages %}
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            {% else %}
+                {{ form.non_field_errors }}
+            {% endif %}
+        </div>
+       {% endif %}
+
+    <div class="container">
+        <h2>Авторизация</h2>
+        <form id="registrationForm" action="{% url 'users:login' %}" method="post">
+            {% csrf_token %}
+
+            <label for="{{ form.username.id_for_label }}">Имя пользователя:</label>
+           {{ form.username }}
+
+            <label for="{{ form.password.id_for_label }}">Пароль:</label>
+            {{ form.password }}
+
+            <input class="btn btn-primary" type="submit" value="Вход" >
+            <button type="button" class="cancel" onclick="window.location.href='{% url 'index' %}'">Отмена</button>
+        <p>Нужен аккаунт? <a href="{% url 'users:registration' %}">Регистрация</a></p>
+        </form>
+<!--        <script>-->
+<!--            document.getElementById('registrationForm').addEventListener('submit', function (event) {-->
+<!--                window.location.href = "{% url 'index' %}";-->
+<!--                event.preventDefault();-->
+<!--            });-->
+<!--        </script>-->
+    </div>
+{% endblock %}

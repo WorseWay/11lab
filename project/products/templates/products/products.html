@@ -1,0 +1,29 @@
+{% extends 'products/base.html' %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{%static 'css/tovar.css' %}">
+{% endblock %}
+
+
+{%block content%}
+   <div class="tovars">
+    <div class="containers">
+        {% for product in products %}
+         <div class="tovar">
+            <div class="product">
+                <p><img src="{{ product.image.url }}" alt=""></p>
+                <p>{{ product.name }}</p>
+                <p class="product-price">{{ product.price }}р</p>
+                 <div class="card-footer text-start">
+                    <a class="btn btn-outline-success " href="{% url 'products:basket_add' product.id %}">В корзину</a>
+                </div>
+          </div>
+        </div>
+        {% endfor %}
+
+</div>
+        </div>
+   </div>
+{% endblock %}

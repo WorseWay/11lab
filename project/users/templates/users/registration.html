@@ -1,0 +1,44 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+        <div class="col-lg-7">
+            {% if form.errors %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert"
+                 style="margin-top: 50px;">
+                {{form.errors }}
+
+            </div>
+            {% endif %}
+
+    <div class="container">
+        <h2>Регистрация</h2>
+        <form id="registrationForm" action="{% url 'users:registration' %}" method="post">
+            {% csrf_token %}
+            <label for="{{ form.first_name.id_for_label }}">Имя:</label>
+           {{ form.first_name }}
+            <label for="{{ form.last_name.id_for_label }}">Фамилия:</label>
+           {{ form.last_name }}
+            <label for="{{ form.username.id_for_label }}">Имя пользователя:</label>
+            {{ form.username }}
+
+            <label for="{{ form.email.id_for_label }}">Электронная почта:</label>
+            {{ form.email }}
+
+            <label for="{{ form.password1.id_for_label }}">Пароль:</label>
+            {{ form.password1 }}
+            <label for="{{ form.password2.id_for_label }}">Повторите пароль:</label>
+           {{ form.password2 }}
+
+            <input class="btn btn-primary" type="submit" value="Зарегистрироваться" >
+            <button type="button" class="cancel" onclick="window.location.href='{% url 'index' %}'">Отмена</button>
+        </form>
+        <p>Уже есть аккаунт? <a href="{% url 'users:login' %}">Войти</a></p>
+<!--        <script>-->
+<!--            document.getElementById('registrationForm').addEventListener('submit', function (event) {-->
+<!--                window.location.href = "{% url 'index' %}";-->
+<!--                event.preventDefault();-->
+<!--            });-->
+<!--        </script>-->
+    </div>
+{% endblock %}

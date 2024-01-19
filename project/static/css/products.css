@@ -1,0 +1,361 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 25px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    display: block;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    color: #000000;
+}
+
+header a {
+    color: #000000;
+}
+
+.logo {
+    margin-right: 50px;
+    color: orange;
+}
+
+.menu {
+    display: flex;
+}
+
+
+.menu li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.menu li a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+.REG {
+    font-size: 17px;
+    margin-left: auto;
+    letter-spacing: 0.1em;
+    color: orange
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.delivery-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.delivery-info div {
+    width: 30%;
+    padding: 80px;
+    background:radial-gradient(circle at 25% top, rgb(146, 146, 243),white, pink);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.delivery-info div:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+body{
+margin:0;
+overflow-x:hidden;
+}
+
+.footer {
+background: #191919;
+padding: 30px 80px;
+color: white;
+font-family: 'Play', sans-serif;
+text-align: left;
+padding: 10px 80px;
+}
+
+.footer_content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.logo img {
+width: 50px;
+margin-bottom: 30px;
+}
+
+.help,
+.sub,
+.new {
+flex-basis: 30%;
+text-align: left;
+flex-direction: row;
+}
+
+.help a,
+.sub a {
+display: inline-block;
+margin-right: 20px;
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+font-size: 0.8em
+
+}
+.help a{
+opacity: 0.5;
+}
+.help a:hover,
+.sub a:hover {
+color: orange;
+opacity: 1;
+}
+
+.sub i {
+font-size: 1.5em;
+margin-right: 20px;
+}
+
+.new {
+flex-basis: 30%;
+text-align: left;
+display: flex;
+flex-direction: column;
+}
+
+.new h6 {
+margin-bottom: 10px;
+color: white;
+}
+
+.new input {
+padding: 10px;
+margin-bottom: 10px;
+}
+
+.new button {
+padding: 10px 20px;
+background-color: #191919;
+color: white;
+border: 2px solid white;
+cursor: pointer;
+transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.new button:hover {
+background-color: #eeb64f;
+border: 2px solid #eeb64f;
+
+}
+section {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row img {
+    /* max-width: 100%; */
+    margin-right: 20px;
+    width: 550px;
+    height: 600px;
+}
+
+.why {
+    text-align: left;
+    width: 50%
+    
+}
+
+.why h3 {
+    color: rgb(248, 149, 166);
+    border: 2px solid rgb(248, 149, 166);
+    border-radius: 100px; 
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.why h1 {
+   
+    margin: 10px 0;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.why p {
+   
+    margin-bottom: 20px;
+    color: #555;
+    white-space: normal;
+    font-family: 'Times New Roman'
+}
+
+.why button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: white;
+    color: #555;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.why button img.small-ice {
+    max-width: 40px;
+    max-height: 50px;
+    margin-right: 5px;
+}
+
+.why button:hover {
+    background-color: pink;
+    border-color: pink;
+    color: white;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 1000px;
+    max-height: 800px;
+    width: 80%;
+    padding-top: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.modal a{
+    padding-top: 380px;
+  color: #000;
+    font-size: 25px;
+    margin-right: 20px;
+    text-decoration: underline;
+    
+}
+.modal-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-content p {
+    flex: 0 0 30%; /* Ширина изображения в модальном окне */
+    margin: 10px;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.product-info {
+    text-align: center;
+
+}
+
+.product-price {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-to-cart-btn {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}
+.containers{
+    background: #ffffff;
+height: 450px;
+    display: grid;
+grid-template-columns: repeat(auto-fill, 225px);
+width: 100%;
+justify-content: start;
+justify-items:start; /* Размещаем карточку по центру */
+column-gap: 80px; /* Отступ между колонками */
+margin-left: 10px;
+padding-top: 10px;
+
+}
+.product{
+    margin: 10px;
+    padding: 3px; 
+    border: 2px solid #000000b9;
+}
+.product img{
+    height: 250px;
+    width: 250px;
+}
+.product p{
+    text-align: center;
+}

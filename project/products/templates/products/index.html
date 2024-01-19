@@ -1,0 +1,56 @@
+{% extends  'products/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{%static 'css/products.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <section>
+        <div class="row">
+            <img src="{%static 'img/123.png' %}" alt="img123">
+            <div class="why">
+                <h3>Почему мы?</h3>
+                <h1>Мы делаем это вкусно!</h1>
+                <p>Вкусно, дешево, а главное большой выбор. Мороженое Lorem ipsum вы заслуживаете того, чтобы съесть сегодня сладкое</p>
+                <button><img class="small-ice" img src="{%static 'img/ice1.png' %}" alt="ice1">60+</button>
+                <button><img class="small-ice" img src="{%static 'img/ice2.png' %}" alt="ice1">120+</button>
+                <button><img class="small-ice" img src="{%static 'img/ice3.png' %}" alt="ice1">180+</button>
+                <div> <button onclick="openModal()">Купить</button></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="myModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="containers">
+                <div class="tovar">
+                    <div class="product">
+                        <p><img src="{%static 'img/moroz1.png' %}" alt=""></p>
+                        <p> Ванильный рожок</p>
+
+                  </div>
+                </div>
+                <div class="tovar">
+                    <div class="product">
+                        <p><img src="{%static 'img/moroz2.png' %}" alt=""></p>
+                        <p>Рожок с шоколадом</p>
+
+                  </div>
+                </div>
+                <div class="tovar">
+                   <div class="product">
+                    <p><img src="{%static 'img/moroz3.png' %}" alt=""></p>
+                    <p>Фисташковый рожок</p>
+                  </div>
+
+                </div>
+
+        </div>
+            <a href="{% url 'products:index' %}">Подробнее</a>
+    </div>
+{% endblock%}
